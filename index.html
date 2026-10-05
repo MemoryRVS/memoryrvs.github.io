@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MemoryR — Python Developer</title>
+  <meta name="description" content="MemoryR — Python разработчик. Боты, API, автоматизация." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Фоновые свечения -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+
+  <!-- НАВИГАЦИЯ -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">Memory<span>R</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">О себе</a></li>
+        <li><a href="#skills">Навыки</a></li>
+        <li><a href="#projects">Проекты</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ГЛАВНЫЙ ЭКРАН -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        Доступен для проектов
+      </div>
+      <h1 class="hero-title">
+        Привет, я <span class="grad">MemoryR</span>
+      </h1>
+      <div class="hero-role">
+        <span class="prompt">&gt;</span>
+        <span id="typed"></span><span class="cursor">_</span>
+      </div>
+      <p class="hero-desc">
+        Разрабатываю на Python и C# — боты, API и автоматизация процессов.
+        Превращаю рутину в код, который работает сам.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">Смотреть проекты</a>
+        <a href="https://t.me/MemoryRVS" target="_blank" rel="noopener" class="btn btn-ghost">
+          Написать в Telegram
+        </a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- О СЕБЕ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-num">01</span>
+        <h2>О себе</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Меня зовут <strong>MemoryR</strong>, я разработчик на Python.
+            В программировании уже <strong>3–4 года</strong> — за это время прошёл путь
+            от первых скриптов до полноценных ботов и API.
+          </p>
+          <p>
+            Специализируюсь на <strong>автоматизации</strong>: пишу Telegram-ботов,
+            парсеры, интеграции с внешними сервисами и REST API. Также знаком с <strong>C#</strong>.
+          </p>
+          <p>
+            Люблю задачи, где нужно разобраться в чужом API, выжать максимум
+            из ограничений и сделать так, чтобы всё работало <em>без участия человека</em>.
+          </p>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat">
+            <div class="stat-num">3–4</div>
+            <div class="stat-label">года в разработке</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">2+</div>
+            <div class="stat-label">собственных проекта</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">2</div>
+            <div class="stat-label">языка: Python, C#</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">∞</div>
+            <div class="stat-label">часов автоматизации</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- НАВЫКИ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-num">02</span>
+        <h2>Навыки</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">🐍</div>
+          <h3>Python</h3>
+          <p>Основной язык. Боты, парсинг, автоматизация, скрипты.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">#</div>
+          <h3>C#</h3>
+          <p>Второй язык. Разработка приложений и утилит.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🤖</div>
+          <h3>Telegram Bots</h3>
+          <p>Боты для автоматизации, уведомлений и торговли.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🔌</div>
+          <h3>API / REST</h3>
+          <p>Интеграции с внешними сервисами, работа с чужими API.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">⚙️</div>
+          <h3>Автоматизация</h3>
+          <p>Парсеры, автоскуп, трекеры — всё, что можно автоматизировать.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🧩</div>
+          <h3>Постоянно учусь</h3>
+          <p>Изучаю новые технологии и подходы каждый день.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПРОЕКТЫ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-num">03</span>
+        <h2>Проекты</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- ПРОЕКТ 1 -->
+        <article class="project-card reveal">
+          <div class="project-glow"></div>
+          <div class="project-head">
+            <div class="project-icon">📊</div>
+            <span class="project-tag">Python · API · Парсинг</span>
+          </div>
+          <h3 class="project-title">Трекер аукциона STALZONE</h3>
+          <p class="project-desc">
+            Инструмент для отслеживания лотов на аукционе STALZONE в реальном времени.
+            Собирает данные, анализирует цены и помогает не пропустить выгодные предложения.
+          </p>
+          <ul class="project-features">
+            <li>Мониторинг лотов 24/7</li>
+            <li>Уведомления о новых позициях</li>
+            <li>История и статистика цен</li>
+          </ul>
+          <div class="project-links">
+            <!-- Замени # на ссылку на GitHub, когда будет -->
+            <a href="#" class="project-link" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </article>
+
+        <!-- ПРОЕКТ 2 -->
+        <article class="project-card reveal">
+          <div class="project-glow"></div>
+          <div class="project-head">
+            <div class="project-icon">🛒</div>
+            <span class="project-tag">Python · Автоматизация</span>
+          </div>
+          <h3 class="project-title">Автоскуп предметов STALZONE</h3>
+          <p class="project-desc">
+            Автоматизированная система покупки предметов на STALZONE по заданным
+            критериям — цене, редкости, категории. Работает быстрее и точнее человека.
+          </p>
+          <ul class="project-features">
+            <li>Гибкие фильтры для скупки</li>
+            <li>Мгновенная реакция на появление лота</li>
+            <li>Настраиваемые лимиты и приоритеты</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="project-link" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- КОНТАКТЫ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-num">04</span>
+        <h2>Связаться</h2>
+      </div>
+      <div class="contact-card reveal">
+        <h3>Есть идея или задача?</h3>
+        <p>
+          Напиши мне в Telegram — обсудим проект, сроки и что можно автоматизировать.
+        </p>
+        <a href="https://t.me/MemoryRVS" target="_blank" rel="noopener" class="btn btn-primary btn-large">
+          @MemoryRVS — написать
+        </a>
+        <div class="contact-links">
+          <a href="https://t.me/MemoryRVS" target="_blank" rel="noopener">Telegram</a>
+          <span>·</span>
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ФУТЕР -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> MemoryR · Python Developer</p>
+      <p class="footer-sub">Сделано с ♥ и красным цветом</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
