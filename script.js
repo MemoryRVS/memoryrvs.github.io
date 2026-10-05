@@ -6,7 +6,8 @@ const roles = [
   'Python Developer',
   'Bot Developer',
   'API Integration',
-  'Automation Engineer'
+  'Automation Engineer',
+  'Оп секретка'
 ];
 const typedEl = document.getElementById('typed');
 let roleIndex = 0;
