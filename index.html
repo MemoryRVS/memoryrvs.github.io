@@ -4,16 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MemoryR — Python / C# Developer</title>
-  <meta name="description" content="MemoryR — разработчик ботов, API и десктопных утилит на Python и C#. Автоматизация, OCR, Telegram-боты." />
+  <meta name="description" content="MemoryR — разработчик ботов, API и десктопных утилит на Python и C#. Автоматизация, OCR, Telegram-боты, Discord-боты." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <div class="bg-glow bg-glow-1"></div>
   <div class="bg-glow bg-glow-2"></div>
   <div class="bg-glow bg-glow-3"></div>
+
+  <!-- НАВИГАЦИЯ -->
   <nav class="nav">
     <div class="nav-inner">
       <a href="#hero" class="logo">Memory<span>R</span></a>
@@ -28,6 +31,8 @@
       </button>
     </div>
   </nav>
+
+  <!-- ГЛАВНЫЙ ЭКРАН -->
   <section class="hero" id="hero">
     <div class="hero-inner">
       <div class="badge">
@@ -56,6 +61,8 @@
       <span></span>
     </div>
   </section>
+
+  <!-- О СЕБЕ -->
   <section class="section" id="about">
     <div class="container">
       <div class="section-head reveal">
@@ -70,9 +77,9 @@
             путь от первых скриптов до полноценных десктопных приложений и ботов.
           </p>
           <p>
-            Специализируюсь на <strong>автоматизации</strong>: пишу Telegram-ботов,
+            Специализируюсь на <strong>автоматизации</strong>: пишу Telegram и Discord-ботов,
             парсеры, интеграции с внешними API и десктопные утилиты на <strong>WinUI 3 / C#</strong>.
-            Работаю с OCR, многопоточностью и real-time мониторингом.
+            Работаю с <strong>OCR</strong>, компьютерным зрением, многопоточностью и real-time мониторингом.
           </p>
           <p>
             Люблю задачи, где нужно разобраться в чужом API, выжать максимум
@@ -86,7 +93,7 @@
             <div class="stat-label">года в разработке</div>
           </div>
           <div class="stat">
-            <div class="stat-num">2</div>
+            <div class="stat-num">4+</div>
             <div class="stat-label">крупных проекта</div>
           </div>
           <div class="stat">
@@ -101,6 +108,8 @@
       </div>
     </div>
   </section>
+
+  <!-- НАВЫКИ -->
   <section class="section" id="skills">
     <div class="container">
       <div class="section-head reveal">
@@ -111,7 +120,7 @@
         <div class="skill-card reveal">
           <div class="skill-icon">🐍</div>
           <h3>Python</h3>
-          <p>Боты, парсинг, OCR-автоматизация, интеграции с API.</p>
+          <p>Боты, парсинг, OCR-автоматизация, интеграции с API, asyncio.</p>
         </div>
         <div class="skill-card reveal">
           <div class="skill-icon">#</div>
@@ -126,21 +135,23 @@
         <div class="skill-card reveal">
           <div class="skill-icon">🔌</div>
           <h3>REST API</h3>
-          <p>Интеграции, ротация токенов, обработка rate-limit и ошибок.</p>
+          <p>Интеграции, ротация токенов, обход rate-limit, OAuth.</p>
         </div>
         <div class="skill-card reveal">
           <div class="skill-icon">🤖</div>
-          <h3>Telegram Bot API</h3>
-          <p>Уведомления, live-сообщения, редактирование и удаление по id.</p>
+          <h3>Боты</h3>
+          <p>Telegram Bot API, Discord.py — уведомления, музыка, автоматика.</p>
         </div>
         <div class="skill-card reveal">
           <div class="skill-icon">🔍</div>
-          <h3>OCR</h3>
-          <p>Распознавание цен в реальном времени и автоматическая скупка.</p>
+          <h3>OCR / CV</h3>
+          <p>Tesseract, OpenCV, mss — распознавание и реакция в реальном времени.</p>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- ПРОЕКТЫ -->
   <section class="section" id="projects">
     <div class="container">
       <div class="section-head reveal">
@@ -150,6 +161,7 @@
 
       <div class="projects-grid">
 
+        <!-- ПРОЕКТ 1 — SZ TRACKER -->
         <article class="project-card reveal">
           <div class="project-glow"></div>
           <div class="project-head">
@@ -175,23 +187,81 @@
           </div>
         </article>
 
+        <!-- ПРОЕКТ 2 — АВТОСКУП -->
         <article class="project-card reveal">
           <div class="project-glow"></div>
           <div class="project-head">
             <div class="project-icon">🛒</div>
-            <span class="project-tag">Python · OCR · Автоматизация</span>
+            <span class="project-tag">Python · OCR · OpenCV</span>
           </div>
           <h3 class="project-title">Автоскуп предметов STALZONE</h3>
           <p class="project-desc">
-            Программа в реальном времени распознаёт цены на аукционе через <strong>OCR</strong>
-            и мгновенно выкупает предметы, если их стоимость опускается ниже заданного порога.
-            Реакция — за доли секунды, быстрее любого человека.
+            Полноценная десктопная утилита с GUI на CustomTkinter. В реальном времени
+            захватывает заданную область экрана, распознаёт цены через <strong>Tesseract OCR</strong>,
+            и если цена ниже заданного порога — мгновенно выкупает лот: клик по лоту,
+            кнопка «Выкупить», подтверждение. Реакция — за доли секунды.
           </p>
           <ul class="project-features">
-            <li>Распознавание цен через OCR в реальном времени</li>
-            <li>Мгновенная скупка предметов ниже заданного порога</li>
-            <li>Автообновление списка отслеживаемых предметов</li>
-            <li>Уведомления — сразу видно, что успел словить</li>
+            <li>Захват экрана через mss + обработка OpenCV для точного OCR</li>
+            <li>Два алгоритма распознавания: быстрый (image_to_data) и запасной (cv2.findContours)</li>
+            <li>Настраиваемые ROI, точки кликов, задержки и диапазон цен — прямо в GUI</li>
+            <li>Непрерывный режим: после покупки сразу переходит к следующему лоту</li>
+            <li>Глобальная горячая клавиша остановки (по умолчанию F8), настраивается</li>
+            <li>Лог действий в реальном времени + предпросмотр экрана с выделением ROI</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/MemoryRVS" class="project-link" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </article>
+
+        <!-- ПРОЕКТ 3 — DISCORD MUSIC BOT -->
+        <article class="project-card reveal">
+          <div class="project-glow"></div>
+          <div class="project-head">
+            <div class="project-icon">🎵</div>
+            <span class="project-tag">Python · Discord.py · FFmpeg</span>
+          </div>
+          <h3 class="project-title">Discord Music Bot</h3>
+          <p class="project-desc">
+            Полноценный музыкальный бот для Discord с очередью, плейлистами и
+            сохранением настроек для каждого сервера. Работает через
+            <strong>yt-dlp</strong> как pipe-источник для FFmpeg — обходит SABR и
+            стабильно стримит даже там, где обычные боты падают.
+          </p>
+          <ul class="project-features">
+            <li>Воспроизведение по ссылке или поисковому запросу (ytsearch)</li>
+            <li>Поддержка плейлистов с ограничением очереди (защита от спама)</li>
+            <li>Управление: skip, pause, resume, stop, shuffle, remove, clear</li>
+            <li>Loop текущего трека, сохранение громкости и loop per-guild</li>
+            <li>Автоотключение, когда в канале не остаётся живых людей</li>
+            <li>Auto-reconnect и retry при обрывах стрима (60 попыток переподключения)</li>
+            <li>Конфиг каждого сервера хранится в JSON и переживает перезапуск</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/MemoryRVS" class="project-link" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </article>
+
+        <!-- ПРОЕКТ 4 — FUNPAY API -->
+        <article class="project-card reveal">
+          <div class="project-glow"></div>
+          <div class="project-head">
+            <div class="project-icon">💸</div>
+            <span class="project-tag">Python · Requests · BeautifulSoup</span>
+          </div>
+          <h3 class="project-title">FunPay API — библиотека для FunPay.com</h3>
+          <p class="project-desc">
+            Полноценная Python-обёртка над веб-интерфейсом FunPay: работа с лотами,
+            заказами, чатом, балансом и выводом средств. Берёт на себя CSRF-токены,
+            куки, парсинг HTML и все тонкости внутреннего API маркетплейса.
+          </p>
+          <ul class="project-features">
+            <li>Создание, редактирование и удаление лотов с авто-поиском ID</li>
+            <li>Проверка оплаты заказов в реальном времени с колбэком on_paid</li>
+            <li>Полноценный чат: чтение контактов, получение сообщений, отправка текста</li>
+            <li>Получение баланса по всем валютам и вывод средств с поддержкой 2FA</li>
+            <li>Автоматическое извлечение CSRF-токена из 5 разных источников</li>
+            <li>Хранение сессии в requests.Session — быстрые повторные запросы</li>
           </ul>
           <div class="project-links">
             <a href="https://github.com/MemoryRVS" class="project-link" target="_blank" rel="noopener">GitHub →</a>
@@ -201,6 +271,8 @@
       </div>
     </div>
   </section>
+
+  <!-- КОНТАКТЫ -->
   <section class="section" id="contact">
     <div class="container">
       <div class="section-head reveal">
@@ -223,6 +295,7 @@
       </div>
     </div>
   </section>
+
   <footer class="footer">
     <div class="container">
       <p>© <span id="year"></span> MemoryR · Python / C# Developer</p>
